@@ -9,6 +9,7 @@ public class Prodotto {
     private String marca;
     private double prezzo;
     private double iva; 
+    
 
     //creo il costruttore
     public Prodotto(String nome, int prezzo) {
@@ -80,6 +81,11 @@ public class Prodotto {
         } else {
             this.iva = iva;
         }
+    }
+
+    //ma se volessi avere il prezzo con iva inclusa?
+    public double prezzoFinale() {
+         return prezzo + (prezzo * iva/100.0);
     }
 }
 
