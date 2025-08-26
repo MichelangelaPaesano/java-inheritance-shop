@@ -3,21 +3,21 @@ package sottoProdotti;
 import prodotto.Prodotto;
 
 public class Smartphone extends Prodotto {
-    private int imei; 
+    private String imei; 
     private int memoria;
 
-public Smartphone(int imei, int memoria) {
-    super( "S21", 650);
+public Smartphone(String nome, double prezzo, String imei, int memoria) {
+    super(nome, prezzo);
     this.imei = imei;
     this.memoria = memoria;
 }
 
-public int getImei () {
+public String getImei () {
     return imei; 
 }
 
-public void setImei (int imei) {
-    if (imei == 15 && imei > 0) {
+public void setImei (String imei) {
+    if (imei.length() == 15) {
         this.imei = imei;
     } else {
         System.out.println("Il codice imei inserito non è valido");
