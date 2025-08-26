@@ -4,13 +4,13 @@ import prodotto.Prodotto;
 
 public class Televisori extends Prodotto {
     private int dimensioni; 
-    private boolean smart; 
+    private boolean isSmart; 
 
 
 public Televisori (String nome, double prezzo, int dimensioni, boolean smart) {
     super (nome, prezzo);
     this.dimensioni = dimensioni;
-    this.smart = smart;
+    this.isSmart = smart;
 }
 
 public int getDimensioni () {
@@ -26,6 +26,6 @@ public void setDimensioni (int dimensioni) {
 }
 
 public boolean isSmart () {
-    return smart;
+    return isSmart;
 }
 }
