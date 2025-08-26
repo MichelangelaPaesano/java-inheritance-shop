@@ -12,7 +12,7 @@ public class Prodotto {
     
 
     //creo il costruttore
-    public Prodotto(String nome, int prezzo) {
+    public Prodotto(String nome, double prezzo) {
         //con this assegniamo al campo privato "nome" (per esempio) il valore che arriva dal 
         //parametro del costruttore
         this.nome = nome;
@@ -76,7 +76,7 @@ public class Prodotto {
     }
 
     public void setIva (double iva) {
-        if (iva <= 100) {
+        if (iva < 0 || iva > 100.0) {
             System.out.println("L'iva inserita non è valida");
         } else {
             this.iva = iva;
