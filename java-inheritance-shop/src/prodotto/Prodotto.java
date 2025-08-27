@@ -87,5 +87,9 @@ public class Prodotto {
     public double prezzoFinale() {
          return prezzo + (prezzo * iva/100.0);
     }
+
+    public String toString() {
+        return "Codice: " + getCodice() + ", Nome: " + getNome() + ", Marca: " + getMarca() + ", Prezzo: " + getPrezzo() + ", Iva: " + getIva();
+    }
 }
 

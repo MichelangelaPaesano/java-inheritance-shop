@@ -19,5 +19,12 @@ public String getColore () {
 public boolean isWireless () {
     return wireless;
 }
+
+//FACCIAMO OVERRIDE TOSTRING
+@Override
+public String toString() {
+    return "Colore: " + getColore() + ", Wireless: " + isWireless();
+}
+
 }
 

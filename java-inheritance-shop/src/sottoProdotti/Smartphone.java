@@ -28,12 +28,20 @@ public int getMemoria () {
     return memoria;
 }
 
+/**
+ * @param memoria
+ */
 public void setMemoria (int memoria) {
     if (memoria >= 8 && memoria < 1024) {
         this.memoria = memoria;
     } else {
         System.out.println("La memoria inserita non è valida");
     }
+}
+
+@Override
+public String toString() {
+    return "IMEI: " + getImei() + ", Memoria:" + getMemoria();
 }
 
 }

@@ -28,4 +28,10 @@ public void setDimensioni (int dimensioni) {
 public boolean isSmart () {
     return isSmart;
 }
+
+//facciamo override
+@Override
+public String toString() {
+    return "Dimensioni: " + getDimensioni() + ", Smart: " + isSmart();
+}
 }
