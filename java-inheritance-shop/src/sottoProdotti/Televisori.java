@@ -32,6 +32,6 @@ public boolean isSmart () {
 //facciamo override
 @Override
 public String toString() {
-    return "Dimensioni: " + getDimensioni() + ", Smart: " + isSmart();
+    return super.toString() + "Dimensioni: " + getDimensioni() + ", Smart: " + isSmart();
 }
 }

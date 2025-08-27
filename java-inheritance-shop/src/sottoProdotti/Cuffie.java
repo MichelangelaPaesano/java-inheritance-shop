@@ -23,7 +23,7 @@ public boolean isWireless () {
 //FACCIAMO OVERRIDE TOSTRING
 @Override
 public String toString() {
-    return "Colore: " + getColore() + ", Wireless: " + isWireless();
+    return super.toString() + "Colore: " + getColore() + ", Wireless: " + isWireless();
 }
 
 }

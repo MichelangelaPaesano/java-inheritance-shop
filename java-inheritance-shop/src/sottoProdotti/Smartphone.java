@@ -41,7 +41,7 @@ public void setMemoria (int memoria) {
 
 @Override
 public String toString() {
-    return "IMEI: " + getImei() + ", Memoria:" + getMemoria();
+    return super.toString() + "IMEI: " + getImei() + ", Memoria:" + getMemoria();
 }
 
 }
