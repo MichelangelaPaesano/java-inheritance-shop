@@ -12,10 +12,11 @@ public class Prodotto {
     
 
     //creo il costruttore
-    public Prodotto(String nome, double prezzo) {
+    public Prodotto(String nome, String marca, double prezzo) {
         //con this assegniamo al campo privato "nome" (per esempio) il valore che arriva dal 
         //parametro del costruttore
         this.nome = nome;
+        this.marca = marca;
         this.prezzo = prezzo; 
 
         //creo un metodo per creare il codice
